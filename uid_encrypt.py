@@ -16,9 +16,7 @@ deviceId = 'ai10000000000001'
 apikey = 'b8bfa00d66264e41afc0c91b1850f855'
 secret = '09h928747iO6bJ7S'
 deviceId = 'ai10000000000001'
-
-
-# 通过deviceId获取uid
+#通过deviceId获取uid
 def get_uid(in_apikey, in_secret, in_deviceId):
     apikey = in_apikey
     secret = in_secret
@@ -28,7 +26,6 @@ def get_uid(in_apikey, in_secret, in_deviceId):
     data = cipher.encrypt(bytes(text, encoding='utf-8'))
     uid = data.hex()
     return uid
-
 
 uid = get_uid(apikey, secret, deviceId)
 print(uid)

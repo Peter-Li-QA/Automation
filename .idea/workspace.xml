@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78367e3d-dc3f-490c-b649-1116d3690697" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/security1.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uid_encrypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/uid_encrypt.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,16 +49,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Chameleon - 副本" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Hannto\Automation\Github\Chameleon\data" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Hannto\Automation\Github\Chameleon\config" />
       <recent name="E:\Hannto\Automation\Github\Chameleon" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_login.py">
+  <component name="RunManager" selected="Python tests.pytest for test_login.test_login">
     <configuration name="test_login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Chameleon" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,8 +142,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_login.py" />
         <item itemvalue="Python tests.pytest for test_login.test_login" />
+        <item itemvalue="Python tests.pytest in test_login.py" />
         <item itemvalue="Python.test_login" />
         <item itemvalue="Python.uid_encrypt" />
       </list>
@@ -162,7 +167,7 @@
       <workItem from="1612773493414" duration="652000" />
       <workItem from="1612918981351" duration="9111000" />
       <workItem from="1613610513751" duration="9384000" />
-      <workItem from="1613637636948" duration="1126000" />
+      <workItem from="1613637636948" duration="4154000" />
     </task>
     <servers />
   </component>
@@ -185,42 +190,46 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2613" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612773974791" />
-    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1613635165580">
+    <state x="2635" y="222" width="853" height="596" key="#xdebugger.evaluate" timestamp="1613641660849">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613635165580" />
-    <state width="1877" height="321" key="GridCell.Tab.0.bottom" timestamp="1613635316292">
+    <state x="2635" y="222" width="853" height="596" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613641660849" />
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1613641956625">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613635316292" />
-    <state width="1877" height="321" key="GridCell.Tab.0.center" timestamp="1613635316292">
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613641956625" />
+    <state width="1877" height="321" key="GridCell.Tab.0.bottom" timestamp="1613642050307">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613635316292" />
-    <state width="1877" height="321" key="GridCell.Tab.0.left" timestamp="1613635316292">
+    <state width="1877" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613642050307" />
+    <state width="1877" height="321" key="GridCell.Tab.0.center" timestamp="1613642050306">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613635316292" />
-    <state width="1877" height="321" key="GridCell.Tab.0.right" timestamp="1613635316292">
+    <state width="1877" height="321" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613642050306" />
+    <state width="1877" height="321" key="GridCell.Tab.0.left" timestamp="1613642050306">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613635316292" />
-    <state width="1877" height="321" key="GridCell.Tab.1.bottom" timestamp="1613635316292">
+    <state width="1877" height="321" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613642050306" />
+    <state width="1877" height="321" key="GridCell.Tab.0.right" timestamp="1613642050307">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613635316292" />
-    <state width="1877" height="321" key="GridCell.Tab.1.center" timestamp="1613635316292">
+    <state width="1877" height="321" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613642050307" />
+    <state width="1877" height="321" key="GridCell.Tab.1.bottom" timestamp="1613642050307">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613635316292" />
-    <state width="1877" height="321" key="GridCell.Tab.1.left" timestamp="1613635316292">
+    <state width="1877" height="321" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613642050307" />
+    <state width="1877" height="321" key="GridCell.Tab.1.center" timestamp="1613642050307">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613635316292" />
-    <state width="1877" height="321" key="GridCell.Tab.1.right" timestamp="1613635316292">
+    <state width="1877" height="321" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613642050307" />
+    <state width="1877" height="321" key="GridCell.Tab.1.left" timestamp="1613642050307">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="321" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613635316292" />
+    <state width="1877" height="321" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613642050307" />
+    <state width="1877" height="321" key="GridCell.Tab.1.right" timestamp="1613642050307">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="321" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613642050307" />
     <state x="2697" y="185" key="SettingsEditor" timestamp="1613637938131">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -230,10 +239,31 @@
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613618983225" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_login.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_login.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_login.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Chameleon$pytest_for_test_login_test_login.coverage" NAME="pytest for test_login.test_login Coverage Results" MODIFIED="1613619302536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Chameleon$pytest_for_test_login_test_login.coverage" NAME="pytest for test_login.test_login Coverage Results" MODIFIED="1613642013281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Chameleon$demo.coverage" NAME="demo Coverage Results" MODIFIED="1612924974868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/Chameleon$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1613620133014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Chameleon$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1613640730821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Chameleon$test_login.coverage" NAME="test_login Coverage Results" MODIFIED="1613612584832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Chameleon$uid_encrypt.coverage" NAME="uid_encrypt Coverage Results" MODIFIED="1612774021215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
