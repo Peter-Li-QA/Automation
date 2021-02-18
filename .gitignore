@@ -1,0 +1,10 @@
+# 存储 git 提交的过滤信息
+# 加上斜杠用来告知不需要上传github
+
+.pytest_cache/
+assets/
+user.yaml/
+data/
+security.yaml /
+logs/
+uid_encrypt.py/

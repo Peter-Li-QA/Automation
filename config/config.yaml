@@ -1,0 +1,8 @@
+host: "http://smartdevice.ai.tuling123.com/speech/chat"
+logger:
+  name: root
+  logger_level: 'WARNING'
+  strem_handeler_level: 'DEBUG'
+  file: 'py36'
+  file_handler_level: 'INFO'
+  fmt_str: 'Time:%(asctime)s---日志等级：%(levelname)s---收集器名称:%(name)s---日志:%(message)s---%(filename)s---%(lineno)s---'

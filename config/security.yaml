@@ -1,0 +1,25 @@
+investor_user:
+  #投资人账号
+  phone1: '13812341234'
+  phone: '18211112222'
+  pwd: '12345678'
+  member_id: 31
+
+admin_user:
+  #投资人账号
+  phone: '18211111111'
+  pwd: '12345678'
+
+loan_user:
+  #投资人账号
+  phone: '18211113333'
+  pwd: '12345678'
+
+db:
+  host: '8.129.91.152'
+  port: 3306
+  user: 'future'
+  password: '123456'
+  database: 'futureloan'
+  charset: 'utf8'
+  cursorclass: DictCursor
