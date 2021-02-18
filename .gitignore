@@ -3,8 +3,8 @@
 
 .pytest_cache/
 assets/
-user.yaml/
 data/
-security.yaml /
 logs/
-uid_encrypt.py/
+
+security.yaml
+uid_encrypt.py
