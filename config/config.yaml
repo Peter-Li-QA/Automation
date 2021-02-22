@@ -1,8 +1,12 @@
-host: "http://smartdevice.ai.tuling123.com/speech/chat"
+? ''
+: ''
+host: http://smartdevice.ai.tuling123.com/speech/chat
 logger:
+  file: py36
+  file_handler_level: INFO
+  fmt_str: "Time:%(asctime)s---\u65E5\u5FD7\u7B49\u7EA7\uFF1A%(levelname)s---\u6536\
+    \u96C6\u5668\u540D\u79F0:%(name)s---\u65E5\u5FD7:%(message)s---%(filename)s---%(lineno)s---"
+  logger_level: WARNING
   name: root
-  logger_level: 'WARNING'
-  strem_handeler_level: 'DEBUG'
-  file: 'py36'
-  file_handler_level: 'INFO'
-  fmt_str: 'Time:%(asctime)s---日志等级：%(levelname)s---收集器名称:%(name)s---日志:%(message)s---%(filename)s---%(lineno)s---'
+  strem_handeler_level: DEBUG
+token: 4a70b3b7e77b4f12878310f24618b8bb

@@ -7,6 +7,7 @@ from config import path
 import os
 
 
+
 def read_yaml(file_path):
     """通过file_path文件路径读取yaml数据
     得到的是一个字典。
@@ -15,6 +16,14 @@ def read_yaml(file_path):
     with open(file_path, encoding='utf-8') as f:
         data = yaml.load(f, Loader=yaml.SafeLoader)
     return data
+
+
+def write_yaml(yaml_path, new_data_name='',new_value=''):
+    old_value=read_yaml(yaml_path)
+    update=old_value
+    update[new_data_name]=new_value
+    with open(yaml_path, 'w', encoding='utf-8') as f:
+        yaml.dump(update, f)
 
 #
 # file_list=[]
@@ -31,4 +40,3 @@ def read_yaml(file_path):
 # print("yaml_config is :", yaml_config)
 
 # 'a\b\c config.yaml==>a\b\c\config.yaml ==>'\'.join['a\b\c','config.yaml']
-

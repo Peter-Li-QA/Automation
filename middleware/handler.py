@@ -4,7 +4,7 @@ import json
 import requests
 from faker import Faker
 from pymysql.cursors import DictCursor
-from common.yaml_handler import read_yaml
+from common.yaml_handler import read_yaml,write_yaml
 from common.logger_handler import get_logger, time_now
 from common.excel_handler import ExcelHandler
 from common.db_handler import DBHandler
@@ -134,7 +134,7 @@ class MidHandler():
         headers = {}
 
         response = requests.request("POST", url, headers=headers, data=payload, files=files)
-
+        write_yaml(MidHandler.yaml_path,new_data_name='token',new_value=response.json()['token'])
         return response.json()['token']
 
     @classmethod

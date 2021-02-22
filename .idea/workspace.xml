@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78367e3d-dc3f-490c-b649-1116d3690697" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/excel_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/excel_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/yaml_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/yaml_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middleware/handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +50,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Hannto\Automation\Github\Chameleon\data" />
       <recent name="E:\Hannto\Automation\Github\Chameleon\config" />
+      <recent name="E:\Hannto\Automation\Github\Chameleon\data" />
       <recent name="E:\Hannto\Automation\Github\Chameleon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -111,6 +108,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="yaml_handler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Chameleon" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/yaml_handler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for test_login.test_login" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Chameleon" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,23 +145,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_login.test_login&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in demo.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Chameleon" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/demo.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest in test_login.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -166,9 +168,9 @@
       <list>
         <item itemvalue="Python tests.pytest for test_login.test_login" />
         <item itemvalue="Python.handler" />
+        <item itemvalue="Python.yaml_handler" />
         <item itemvalue="Python.turingdemo" />
         <item itemvalue="Python tests.pytest in test_login.py" />
-        <item itemvalue="Python tests.pytest in demo.py" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +196,7 @@
       <workItem from="1613710127842" duration="1817000" />
       <workItem from="1613714429057" duration="787000" />
       <workItem from="1613716835595" duration="7050000" />
-      <workItem from="1613785876918" duration="43124000" />
+      <workItem from="1613785876918" duration="47515000" />
     </task>
     <servers />
   </component>
@@ -218,46 +220,46 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2613" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612773974791" />
-    <state x="2899" y="230" width="853" height="590" key="#xdebugger.evaluate" timestamp="1613961558147">
+    <state x="2892" y="404" width="853" height="590" key="#xdebugger.evaluate" timestamp="1613966975512">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2899" y="230" width="853" height="590" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613961558147" />
+    <state x="2892" y="404" width="853" height="590" key="#xdebugger.evaluate/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613966975512" />
     <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1613641956625">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613641956625" />
-    <state width="1877" height="396" key="GridCell.Tab.0.bottom" timestamp="1613964038852">
+    <state width="1877" height="334" key="GridCell.Tab.0.bottom" timestamp="1613968567876">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613964038852" />
-    <state width="1877" height="396" key="GridCell.Tab.0.center" timestamp="1613964038852">
+    <state width="1877" height="334" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613968567876" />
+    <state width="1877" height="334" key="GridCell.Tab.0.center" timestamp="1613968567876">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613964038852" />
-    <state width="1877" height="396" key="GridCell.Tab.0.left" timestamp="1613964038852">
+    <state width="1877" height="334" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613968567876" />
+    <state width="1877" height="334" key="GridCell.Tab.0.left" timestamp="1613968567876">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613964038852" />
-    <state width="1877" height="396" key="GridCell.Tab.0.right" timestamp="1613964038852">
+    <state width="1877" height="334" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613968567876" />
+    <state width="1877" height="334" key="GridCell.Tab.0.right" timestamp="1613968567876">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="396" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613964038852" />
-    <state width="1877" height="334" key="GridCell.Tab.1.bottom" timestamp="1613963009748">
+    <state width="1877" height="334" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613968567876" />
+    <state width="1877" height="334" key="GridCell.Tab.1.bottom" timestamp="1613968567876">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613963009748" />
-    <state width="1877" height="334" key="GridCell.Tab.1.center" timestamp="1613963009748">
+    <state width="1877" height="334" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613968567876" />
+    <state width="1877" height="334" key="GridCell.Tab.1.center" timestamp="1613968567876">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613963009748" />
-    <state width="1877" height="334" key="GridCell.Tab.1.left" timestamp="1613963009748">
+    <state width="1877" height="334" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613968567876" />
+    <state width="1877" height="334" key="GridCell.Tab.1.left" timestamp="1613968567876">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613963009748" />
-    <state width="1877" height="334" key="GridCell.Tab.1.right" timestamp="1613963009748">
+    <state width="1877" height="334" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613968567876" />
+    <state width="1877" height="334" key="GridCell.Tab.1.right" timestamp="1613968567876">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="334" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613963009748" />
+    <state width="1877" height="334" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1613968567876" />
     <state x="2697" y="185" key="SettingsEditor" timestamp="1613637938131">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -287,21 +289,34 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/middleware/handler.py</url>
-          <line>152</line>
+          <line>164</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/common/yaml_handler.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Chameleon$pytest_for_demo_test_login.coverage" NAME="pytest for demo.test_login Coverage Results" MODIFIED="1613959527012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Chameleon$pytest_in_demo_py.coverage" NAME="pytest in demo.py Coverage Results" MODIFIED="1613959589642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
-    <SUITE FILE_PATH="coverage/Chameleon$handler.coverage" NAME="handler Coverage Results" MODIFIED="1613963992106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/middleware" />
-    <SUITE FILE_PATH="coverage/Chameleon$pytest_for_test_login_test_login.coverage" NAME="pytest for test_login.test_login Coverage Results" MODIFIED="1613964038846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Chameleon$handler.coverage" NAME="handler Coverage Results" MODIFIED="1613968297431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/middleware" />
+    <SUITE FILE_PATH="coverage/Chameleon$pytest_for_test_login_test_login.coverage" NAME="pytest for test_login.test_login Coverage Results" MODIFIED="1613968466450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Chameleon$demo.coverage" NAME="demo Coverage Results" MODIFIED="1613722475499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Chameleon$turingdemo.coverage" NAME="turingdemo Coverage Results" MODIFIED="1613963166611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Chameleon$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1613963126334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Chameleon$test_login.coverage" NAME="test_login Coverage Results" MODIFIED="1613812514727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/Chameleon$uid_encrypt.coverage" NAME="uid_encrypt Coverage Results" MODIFIED="1612774021215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Chameleon$yaml_handler.coverage" NAME="yaml_handler Coverage Results" MODIFIED="1613967995297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
   </component>
 </project>
