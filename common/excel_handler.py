@@ -23,13 +23,13 @@ class ExcelHandler():
         # print(work_sheet.values)
         data = list(work_sheet.values)  # 转化生成器对象为list
         header = data[0]
-        print("header is :", header)
+        # print("header is :", header)
         # 获取所有数据
         # 初始化列表
         all_data = []
         for row in data[1:]:
             row_dict = dict(zip(header, row))  # 用zip 把连个列表组合成元组列表
-            print("row_dict is :", row_dict)
+            # print("row_dict is :", row_dict)
             all_data.append(row_dict)
         return all_data  # all_data #data[1:]
 

@@ -1,5 +1,7 @@
 import os
 import re
+import json
+import requests
 from faker import Faker
 from pymysql.cursors import DictCursor
 from common.yaml_handler import read_yaml
@@ -61,6 +63,7 @@ class MidHandler():
     loan_user_id = ''
     loan_user_token = ''
 
+    # yaml 读取
     yaml_path = os.path.join(path.config_path, 'config.yaml')
     yaml_config = read_yaml(yaml_path)
 
@@ -115,6 +118,43 @@ class MidHandler():
         return my_string
 
     @classmethod
+    def get_token(cls):
+        data = MidHandler.excel.read('login')
+        url = "http://smartdevice.ai.tuling123.com/speech/chat"
+        content_type = eval(data[0]['paras'])['Content-Type']
+        ak = MidHandler.user_config['ak']
+        uid = MidHandler.user_config['uid']
+        parameter = json.dumps({"ak": ak, "uid": uid, "token": "", "asr": 4, "tts": 3, "tone": 20})
+        payload = {'Content-Type': content_type,
+                   'parameters': parameter}
+        files = [
+            ('speech', ('apple.opus', open('E:/Hannto/Automation/Github/Chameleon/Audio/apple.opus', 'rb'),
+                        'application/octet-stream'))
+        ]
+        headers = {}
+
+        response = requests.request("POST", url, headers=headers, data=payload, files=files)
+
+        return response.json()['token']
+
+    @classmethod
+    def update_tests_data(cls):
+        data = MidHandler.excel.read('login')
+        case_range = len(data)
+        index_num: int
+        new_token = MidHandler.get_token()
+        for index_num in range(case_range):
+            new_parameters = eval(eval(data[index_num]['paras'])['parameters'])
+            new_parameters["ak"] = MidHandler.user_config['ak']
+            new_parameters["uid"] = MidHandler.user_config['uid']
+            new_parameters["token"] = new_token
+            new_paras = {"parameters": json.dumps(new_parameters)}
+            str_new_paras = json.dumps(new_paras)
+            data[index_num]['paras'] = str_new_paras
+
+        return data
+
+    @classmethod
     def generate_new_phone(cls):
         """自动生成手机号"""
         fk = Faker(locale='zh_CN')
@@ -153,6 +193,7 @@ class MidHandler():
 db = MidDBHandler()
 
 if __name__ == '__main__':
-    strings = '{"mobile_phone": "#investor_phone#", "pwd": "#investor_pwd#", "mobile_phone": "#loan_phone#", "pwd": "#loan_pwd#", "mobile_phone": "#admin_phone#", "pwd": "#admin_pwd#"}'
-    a = MidHandler.replace_data(strings)
-    print(a)
+    # strings = '{"mobile_phone": "#investor_phone#", "pwd": "#investor_pwd#", "mobile_phone": "#loan_phone#", "pwd": "#loan_pwd#", "mobile_phone": "#admin_phone#", "pwd": "#admin_pwd#"}'
+    # a = MidHandler.replace_data(strings)
+    a = MidHandler.update_tests_data()
+    print('data is : ', a)
