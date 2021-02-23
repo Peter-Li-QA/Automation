@@ -3,9 +3,8 @@
 """
 import yaml
 # from config.path import config_path
-from config import path
-import os
-
+# from config import path
+# import os
 
 
 def read_yaml(file_path):
@@ -18,12 +17,9 @@ def read_yaml(file_path):
     return data
 
 
-def write_yaml(yaml_path, new_data_name='',new_value=''):
-    old_value=read_yaml(yaml_path)
-    update=old_value
-    update[new_data_name]=new_value
-    with open(yaml_path, 'w', encoding='utf-8') as f:
-        yaml.dump(update, f)
+def write_yaml(file_path, data):
+    with open(file_path, 'w', encoding='utf-8') as f:
+        yaml.dump(data, f, Dumper=yaml.SafeDumper)
 
 #
 # file_list=[]

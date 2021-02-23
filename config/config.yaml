@@ -1,12 +1,15 @@
-? ''
-: ''
-host: http://smartdevice.ai.tuling123.com/speech/chat
+host: "http://smartdevice.ai.tuling123.com/speech/chat"
+turing:
+  url: "http://smartdevice.ai.tuling123.com/speech/chat"
+  apiKey: "b8bfa00d66264e41afc0c91b1850f855"
+  secret: "09h928747iO6bJ7S"
+  uid: "ac96068d8631ad2323dabd31040ca599"
+  deviceId: "ai11223344556677"
+
 logger:
-  file: py36
-  file_handler_level: INFO
-  fmt_str: "Time:%(asctime)s---\u65E5\u5FD7\u7B49\u7EA7\uFF1A%(levelname)s---\u6536\
-    \u96C6\u5668\u540D\u79F0:%(name)s---\u65E5\u5FD7:%(message)s---%(filename)s---%(lineno)s---"
-  logger_level: WARNING
-  name: root
-  strem_handeler_level: DEBUG
-token: 4a70b3b7e77b4f12878310f24618b8bb
+  name: "turing"
+  logger_level: 'DEBUG'
+  stream_handler_level: 'DEBUG'
+  file: 'chameleon'
+  file_handler_level: 'DEBUG'
+  fmt_str: 'Time:%(asctime)s---日志等级：%(levelname)s---收集器名称:%(name)s---日志:%(message)s---%(filename)s---%(lineno)s---'

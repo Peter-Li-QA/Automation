@@ -4,32 +4,12 @@ import json
 import requests
 from faker import Faker
 from pymysql.cursors import DictCursor
-from common.yaml_handler import read_yaml,write_yaml
+from common.yaml_handler import read_yaml, write_yaml
 from common.logger_handler import get_logger, time_now
 from common.excel_handler import ExcelHandler
 from common.db_handler import DBHandler
 from config import path
 
-
-# class MidDBHanlder(DBHandler):
-#     def __init__(self,
-#                  host=user_config['db']['host'],
-#                  port=user_config['db']['port'],
-#                  user=user_config['db']['user'],
-#                  password=user_config['db']['password'],
-#                  # 不要写成utf-8
-#                  charset=user_config['db']['charset'],
-#                  # 指定数据库
-#                  database=user_config['db']['database'],
-#                  cursorclass=DictCursor
-#                  ):
-#         super.__init__(host=host,
-#                        port=port,
-#                        user=user,
-#                        password=password,
-#                        charset=charset,
-#                        database=database,
-#                        cursorclass=cursorclass)
 
 class MidDBHandler(DBHandler):
     def __init__(self):
@@ -70,14 +50,27 @@ class MidHandler():
     user_path = os.path.join(path.config_path, 'security.yaml')
     user_config = read_yaml(user_path)
 
+    # token
+
+    turing_token_yaml_path = os.path.join(path.config_path, 'turing_token.yaml')
     # logger
-    logger_file = os.path.join(path.logs_path, yaml_config['logger']['file'] + '_' + time_now + '.log')
-    logger = get_logger(name=yaml_config['logger']['name'],
-                        file=logger_file)
+    # logger_file = os.path.join(path.logs_path, yaml_config['logger']['file'] + '_' + time_now + '.log')
+    # logger = get_logger(name=yaml_config['logger']['name'],
+    #                     file=logger_file)
     folder_name = os.path.dirname(os.path.dirname(__file__))
     folder_base_name = os.path.basename(folder_name)
     log_path = path.logs_path
-    log_name = '{}/{}_{}.log'.format(log_path, folder_base_name, time_now)
+
+    logger_file = '{}/{}_{}.log'.format(log_path, folder_base_name, time_now)
+
+    logger = get_logger(name=yaml_config['logger']['name'],
+                        file=logger_file,
+                        logger_level=yaml_config['logger']['logger_level'],
+                        stream_handler_level=yaml_config['logger']['stream_handler_level'],
+                        file_handler_level=yaml_config['logger']['file_handler_level'],
+                        fmt_str=yaml_config['logger']['fmt_str']
+                        )
+    # logger.debug('debug message')
 
     # excel对象
     excel_file = os.path.join(path.data_path, 'cases.xlsx')
@@ -120,7 +113,7 @@ class MidHandler():
     @classmethod
     def get_token(cls):
         data = MidHandler.excel.read('login')
-        url = "http://smartdevice.ai.tuling123.com/speech/chat"
+        url = MidHandler.yaml_config['host']
         content_type = eval(data[0]['paras'])['Content-Type']
         ak = MidHandler.user_config['ak']
         uid = MidHandler.user_config['uid']
@@ -134,8 +127,11 @@ class MidHandler():
         headers = {}
 
         response = requests.request("POST", url, headers=headers, data=payload, files=files)
-        write_yaml(MidHandler.yaml_path,new_data_name='token',new_value=response.json()['token'])
-        return response.json()['token']
+
+        res_token = response.json()['token']
+        rec_token = {'token': res_token}
+        write_yaml(MidHandler.turing_token_yaml_path, rec_token)
+        return res_token
 
     @classmethod
     def update_tests_data(cls):
@@ -189,8 +185,8 @@ class MidHandler():
 #         if not phone_in_db:
 #             return phone
 
-
-db = MidDBHandler()
+#
+# db = MidDBHandler()
 
 if __name__ == '__main__':
     # strings = '{"mobile_phone": "#investor_phone#", "pwd": "#investor_pwd#", "mobile_phone": "#loan_phone#", "pwd": "#loan_pwd#", "mobile_phone": "#admin_phone#", "pwd": "#admin_pwd#"}'
